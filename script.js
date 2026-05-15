@@ -242,7 +242,7 @@ fetchWeather();
 
 setInterval(fetchWeather, 60000);
 
-/* SEINÄJOKI LIVE WEATHER */
+/* LIVE WEATHER */
 
 async function fetchSeinajokiWeather() {
 
