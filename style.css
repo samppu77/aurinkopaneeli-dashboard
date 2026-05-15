@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    background:
+    radial-gradient(circle at top,
+    #1e3a8a 0%,
+    #0f172a 40%,
+    #020617 100%);
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+nav {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 60px;
+
+    background: rgba(2, 6, 23, 0.85);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #38bdf8;
+
+    font-size: 42px;
+
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 75vh;
+
+    padding: 60px 20px 20px 20px;
+}
+
+.hero-content {
+    max-width: 950px;
+}
+
+.hero-content h2 {
+    font-size: 82px;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    background: linear-gradient(to right, white, #38bdf8);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 24px;
+
+    line-height: 1.9;
+
+    color: #cbd5e1;
+
+    margin-bottom: 40px;
+}
+
+/* LOCATION INFO */
+
+.location-info {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 80px;
+
+    font-size: 20px;
+
+    color: #94a3b8;
+
+    letter-spacing: 0.5px;
+
+    line-height: 1.8;
+}
+
+/* CARDS */
+
+.hero {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 60px auto 120px auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 35px;
+}
+
+.card,
+.data-card {
+    background: rgba(30, 41, 59, 0.65);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(14px);
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.4);
+
+    transition: 0.35s;
+}
+
+.card:hover,
+.data-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(56,189,248,0.4);
+
+    box-shadow:
+    0 25px 60px rgba(56,189,248,0.18);
+}
+
+.card h3,
+.data-card h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #dbe4f0;
+
+    line-height: 1.9;
+
+    font-size: 18px;
+}
+
+/* CONTENT */
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+.content h2 {
+    font-size: 60px;
+
+    margin-bottom: 30px;
+
+    color: #38bdf8;
+}
+
+.content h3 {
+    font-size: 34px;
+
+    margin-top: 50px;
+
+    margin-bottom: 20px;
+}
+
+.content p,
+.content li {
+    font-size: 21px;
+
+    line-height: 2;
+
+    color: #dbe4f0;
+}
+
+.content ul {
+    margin-left: 30px;
+
+    margin-top: 20px;
+}
+
+.content a {
+    color: #38bdf8;
+
+    font-size: 20px;
+}
+
+/* IMAGE */
+
+.main-image {
+    width: 100%;
+    max-width: 900px;
+
+    display: block;
+
+    margin: 50px auto;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.45);
+}
+
+/* DATA GRID */
+
+.data-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 35px;
+
+    margin-top: 50px;
+}
+
+.data-card {
+    text-align: center;
+}
+
+.data-card p {
+    font-size: 58px;
+
+    font-weight: 800;
+
+    margin-top: 25px;
+
+    color: #38bdf8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 45px;
+
+    background: rgba(2, 6, 23, 0.85);
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 52px;
+    }
+
+    .hero-content p {
+        font-size: 19px;
+    }
+
+    .content h2 {
+        font-size: 42px;
+    }
+
+}
+
+/* CHART BUTTONS */
+
+.chart-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+}
+
+.chart-buttons button {
+
+    background: rgba(56,189,248,0.15);
+
+    color: white;
+
+    border: 1px solid rgba(56,189,248,0.35);
+
+    padding: 12px 24px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.chart-buttons button:hover {
+
+    background: #38bdf8;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(56,189,248,0.35);
+}
+
+/* WEATHER BAR */
+
+.weather-bar {
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto 120px auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 35px;
+}
+
+.weather-card {
+
+    background: rgba(15, 23, 42, 0.75);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(18px);
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+
+    transition: 0.35s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.weather-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(56,189,248,0.12),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+.weather-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(56,189,248,0.45);
+
+    box-shadow:
+    0 25px 70px rgba(56,189,248,0.18);
+}
+
+.weather-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    color: white;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.weather-card p {
+
+    font-size: 64px;
+
+    font-weight: 800;
+
+    color: #38bdf8;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.online-status {
+
+    color: #22c55e !important;
+}

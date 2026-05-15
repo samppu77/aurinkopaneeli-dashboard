@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Live Data</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h1>Aurinkopaneeli Projekti</h1>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Etusivu</a>
+            </li>
+
+            <li>
+                <a href="projekti.html">Projektista</a>
+            </li>
+
+            <li>
+                <a href="data.html">Live Data</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="content">
+
+        <h2>Live Dashboard</h2>
+
+        <p>
+            Reaaliaikainen näkymä aurinkopaneelin sensoreihin,
+            servomoottoreihin ja energiantuotantoon.
+        </p>
+
+        <div class="data-grid">
+
+            <div class="data-card">
+
+                <h3>☀️ Sensori 1</h3>
+
+                <p id="sensor1">845</p>
+
+            </div>
+
+            <div class="data-card">
+
+                <h3>☀️ Sensori 2</h3>
+
+                <p id="sensor2">812</p>
+
+            </div>
+
+            <div class="data-card">
+
+                <h3>⚙️ Servo X</h3>
+
+                <p id="servoX">45°</p>
+
+            </div>
+
+            <div class="data-card">
+
+                <h3>⚙️ Servo Y</h3>
+
+                <p id="servoY">70°</p>
+
+            </div>
+
+            <!-- SEINÄJOKI LIVE WEATHER -->
+
+            <div class="data-card">
+
+                <h3>🌡️ Paneeli</h3>
+
+                <p id="seinajokiTemp">
+
+                    Ladataan...
+
+                </p>
+
+            </div>
+
+            <div class="data-card">
+
+                <h3>💧 Ilmankoste-us</h3>
+
+                <p id="seinajokiHumidity">
+
+                    Ladataan...
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ENERGY CHART -->
+
+        <div class="card" style="margin-top: 60px;">
+
+            <h3>📈 Energiantuotanto</h3>
+
+            <div class="chart-buttons">
+
+                <button onclick="changeData('12h')">
+
+                    12H
+
+                </button>
+
+                <button onclick="changeData('1d')">
+
+                    1D
+
+                </button>
+
+                <button onclick="changeData('30d')">
+
+                    30D
+
+                </button>
+
+                <button onclick="changeData('180d')">
+
+                    180D
+
+                </button>
+
+                <button onclick="changeData('1y')">
+
+                    1Y
+
+                </button>
+
+            </div>
+
+            <canvas id="energyChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 Aurinkopaneeli Projekti
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

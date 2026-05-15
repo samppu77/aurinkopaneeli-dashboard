@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Aurinkopaneeli Projekti</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <h1>Aurinkopaneeli Projekti</h1>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Etusivu</a>
+            </li>
+
+            <li>
+                <a href="projekti.html">Projektista</a>
+            </li>
+
+            <li>
+                <a href="data.html">Live Data</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <header>
+
+        <div class="hero-content">
+
+            <h2>
+
+                Aurinkoa Seuraava
+                Aurinkopaneeli
+
+            </h2>
+
+            <p>
+
+                Älykäs IoT-järjestelmä joka käyttää Raspberry Pi:tä,
+                servomoottoreita ja valotunnistimia
+                aurinkopaneelin automaattiseen seuraamiseen.
+
+            </p>
+
+            <!-- LOCATION INFO -->
+
+            <div class="location-info">
+
+                📍 Oulu, Suomi — Live säädata Open-Meteo API:sta
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- LIVE WEATHER BAR -->
+
+    <section class="weather-bar">
+
+        <div class="weather-card">
+
+            <h3>🌡️ Lämpötila</h3>
+
+            <p id="temperature">
+
+                Ladataan...
+
+            </p>
+
+        </div>
+
+        <div class="weather-card">
+
+            <h3>💧 Ilmankosteus</h3>
+
+            <p id="humidity">
+
+                Ladataan...
+
+            </p>
+
+        </div>
+
+        <div class="weather-card">
+
+            <h3>☀️ Järjestelmä</h3>
+
+            <p class="online-status">
+
+                ONLINE
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MAIN CARDS -->
+
+    <section class="hero">
+
+        <div class="card">
+
+            <h3>☀️ Auringon Seuranta</h3>
+
+            <p>
+
+                Neljä valotunnistinta mittaavat valon määrää
+                eri suunnista reaaliaikaisesti.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>⚙️ Servomoottorit</h3>
+
+            <p>
+
+                Kaksi servomoottoria liikuttaa paneelia
+                automaattisesti kohti aurinkoa.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📡 Live Data</h3>
+
+            <p>
+
+                Nettisivu näyttää sensorien tiedot
+                reaaliaikaisesti JavaScriptillä.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Aurinkopaneeli Projekti
+
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
